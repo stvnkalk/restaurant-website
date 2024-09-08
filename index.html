@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Your Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Soviet Restaurant</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="scroll-link">Home</a></li>
+                    <li><a href="#menu" class="scroll-link">Menu</a></li>
+                    <li><a href="#contact" class="scroll-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Home Section -->
+        <section id="home">
+            <div class="hero">
+                <h2>Welcome to Soviet Restaurant</h2>
+                <p>Experience real slavic cuisine</p>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <!--<button id="toggle-menu">Show Menu</button>-->
+                
+                <nav class="secondary-navbar">
+                    <ul>
+                        <li><a href="#soups">Soups</a></li>
+                        <li><a href="#mains">Main Dishes</a></li>
+                        <li><a href="#drinks">Drinks</a></li>
+                        <li><a href="#desserts">Desserts</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-category">
+                    <section id="soups">
+                        <h3>Soups</h3>
+                        <div class="menu-item">
+                            <img src="images/borshch.jpg" alt="Soup Item 1">
+                            <div class="menu-details">
+                                <h4>Borshch</h4>
+                                <p>Ukrainian beetroot soup</p>
+                                <p>beef, pork, salo, beetroots, cabbage, carrots, celeriac, onions, potatoes, mushrooms, tomato paste, parsley, chives, dill, bay leaves</p>
+                                <span>$5.00</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- More soups/starters -->
+                    <div class="menu-item">
+                        <img src="images/solyanka.jpg" alt="Soup Item 2">
+                        <div class="menu-details">
+                            <h4>Solyanka</h4>
+                            <p>Russian smoked meat soup</p>
+                            <p>sausage, cured meats, rich broth, olives, capers, and more</p>
+                            <span>$5.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <section id="mains">
+                <div class="menu-category">
+                    <h3>Main Courses</h3>
+                    <div class="menu-item">
+                        <img src="images/asado.jpg" alt="Main Course Item 1">
+                        <div class="menu-details">
+                            <h4>Asado</h4>
+                            <p>Argentinian grilled meat speciality.</p>
+                            <span>$50.00</span>
+                        </div>
+                    </div>
+                    <!-- More main courses -->
+                    <div class="menu-item">
+                        <img src="images/empanadas.jpg" alt="Main Course Item 2">
+                        <div class="menu-details">
+                            <h4>Empanadas</h4>
+                            <p>Argentinian dumplings</p>
+                            <p>angus beef/vegetarian/chicken/ham & cheese</p>
+                            <span>$20.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/varenikis.jpg" alt="Main Course Item 3">
+                        <div class="menu-details">
+                            <h4>Varenyky</h4>
+                            <p>Ukrainian dumplings</p>
+                            <p>potato filled, topped with sour cream and onions</p>
+                            <span>$20.00</span>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <!-- More categories -->
+                <section id="drinks">
+                    <h3>Drinks</h3>
+                    <div class="menu-item">
+                        <img src="images/drinks/tsarskaya.jpg" alt="Drink Item 1">
+                        <div class="menu-details">
+                            <h4>Vodka | 0,03l</h4>
+                            <p>Tsarskaya</p>
+                            <span>$5.00</span>
+                        </div>
+                    </div>
+                    <!-- More drinks -->
+                     <div class="menu-item">
+                        <img src="images/drinks/kompot.jpg" alt="Drink Item 2">
+                        <div class="menu-details">
+                            <h4>Kompot | 0,2l</h4>
+                            <p>Homemade, boiled fruit juice</p>
+                            <span>$4.00</span>
+                        </div>
+                     </div>
+                </section>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for reservations or inquiries.</p>
+                <p>Address: 123 Main Street, City, Country</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            
+            <p>&copy; 2024 Your Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

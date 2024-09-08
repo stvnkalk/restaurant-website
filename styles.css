@@ -1,0 +1,257 @@
+/* Global Styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif; /* Elegant font for body text */
+    color: hsla(0, 0%, 80%, 0.995);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #0A0D0A;
+    background-image: url(images/patterns/what-the-hex-dark.png);
+}
+
+
+header {
+    background-color: black; /* Dark, elegant color */
+    color: #ecf0f1; /* Light text color */
+    padding: 1rem 0;
+    height: 10vh;
+}
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif; /* Fancy font for header */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #BF815E; /* Accent color */
+}
+
+.hero {
+    position: relative; /* Needed for the overlay */
+    background-image: url('images/herobg.jpg'); /* High-quality hero image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the image stays fixed while scrolling */
+    height: 90vh; /* Adjust height as needed */
+    color: #ecf0f1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents image overflow */
+}
+
+.hero::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1; /* Places overlay above the image */
+}
+
+.hero h2, .hero p {
+    position: relative; /* Positions text above the overlay */
+    z-index: 2; /* Ensures text is above the overlay */
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for text */
+    display: flex;
+}
+
+.hero h2 {
+    font-size: 3rem; /* Larger font size for the heading */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Adjust size for the paragraph */
+}
+
+
+/* Secondary Navbar Styling */
+.secondary-navbar {
+    background-color: black;
+    /*background-image: url('images/beanstalk-dark.png');*/
+    padding: 1rem 0;
+    margin-top: 2rem; /* Space below hero section */
+}
+
+.secondary-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.secondary-navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5em;
+}
+
+.secondary-navbar a:hover {
+    background-color: #260F0A;
+    border-radius: 4px;
+}
+
+
+main .container {
+    width: 90%;
+    
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: #BF815E;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #735840;
+}
+
+
+
+.menu-category {
+    margin-bottom: 2rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.menu-item img {
+    width: 150px;
+    max-height: auto;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.menu-details {
+    max-width: calc(100% - 170px); /* Adjusts space to fit the image */
+}
+
+.menu-details h4 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-details p {
+    margin: 0.5rem 0;
+}
+
+.menu-details span {
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    header .container, .main .container, footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        height: auto;
+    }
+
+    header nav ul li:not(:nth-child(2)) { /* Hide Home and Contact in Header */
+        display: none;
+    }
+    
+    header nav ul li {
+        font-size: 1.5em;
+    }
+
+    #menu {
+        justify-content: center; /* Center the Menu link */
+    }
+    
+    .main-navbar h1 {
+        font-size: 1.5rem; /* Adjust logo size for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        align-items: flex;
+    }
+
+    .menu-item img {
+        margin-bottom: 1rem;
+    }
+
+    #menu, #contact {
+        text-align: center;
+    }
+
+    footer {
+        text-align:center;
+    }
+}
